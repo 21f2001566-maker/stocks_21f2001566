@@ -43,9 +43,9 @@ def test_parquet_data_integrity():
     assert pd.api.types.is_datetime64_any_dtype(df["event_timestamp"]), \
         "'event_timestamp' column should be datetime type"
 
-# def test_numeric_columns_are_numeric_parquet():
-#     df = pd.read_parquet("data/stock_data.parquet")
-#     numeric_cols = ['open', 'high', 'low', 'close', 'volume', 'ma_15_min', 'ma_60_min', 'rsi_14']
+def test_numeric_columns_are_numeric_parquet():
+    df = pd.read_parquet("data/stock_data.parquet")
+    numeric_cols = ['open', 'high', 'low', 'close', 'volume', 'ma_15_min', 'ma_60_min', 'rsi_14']
 
-#     for col in numeric_cols:
-#         assert pd.api.types.is_numeric_dtype(df[col]), f"Column {col} is not numeric"
+    for col in numeric_cols:
+        assert pd.api.types.is_numeric_dtype(df[col]), f"Column {col} is not numeric"
