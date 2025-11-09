@@ -1,0 +1,5 @@
+outs:
+- md5: 0734e59edb73f2ca80a7fbc8156fd134
+  size: 64127
+  hash: md5
+  path: stock_data.parquet

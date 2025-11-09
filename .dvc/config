@@ -1,0 +1,5 @@
+[core]
+    remote = myremote
+['remote "myremote"']
+    url = gs://21f2001566_stocks
+    credentialpath = ../pelagic-quanta-474118-c1-3c2767b31b21.json

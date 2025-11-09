@@ -1,0 +1,12 @@
+project: stock_project
+registry: gs://21f2001566_stocks/feast/registry.db
+provider: local
+
+online_store:
+  type: sqlite
+  path: online_store.db
+
+offline_store:
+  type: file
+
+entity_key_serialization_version: 3
